@@ -6,11 +6,11 @@ Campaign Monitor recently made some changes to their API.
 
 This fork makes the following changes:
 
-    * host changed from http://app.campaignmonitor.com to http://api.createsend.com
-    * ID values are no longer sent #to_i because they are hex strings
-    * added support for subscribers with custom fields using SOAP API
-    * refactored gemspec to build on github
-    * misc. cleanup and refactoring
+* host changed from http://app.campaignmonitor.com to http://api.createsend.com
+* ID values are no longer sent #to_i because they are hex strings
+* added support for subscribers with custom fields using SOAP API
+* refactored gemspec to build on github
+* misc. cleanup and refactoring
 
 
 == Pre-requisites
@@ -21,11 +21,16 @@ http://www.campaignmonitor.com.
 == Resources
 
 === Install
-gem install patientslikeme-campaign_monitor
+
+  sudo gem install patientslikeme-campaign_monitor -s http://gems.github.com
+
+Add the following to the Rails::Initializer block in config/environment.rb (optionally specify a :version):
+
+  config.gem 'patientslikeme-campaign_monitor', :lib => 'campaign_monitor', :source => 'http://gems.github.com'
 
 === Git Repository
-http://github.com/patientslikeme/campaign_monitor
 
+http://github.com/patientslikeme/campaign_monitor
 
 == Usage
 
