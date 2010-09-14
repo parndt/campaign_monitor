@@ -257,7 +257,7 @@ PARSER =
     begin
       require 'rexml-expansion-fix'
     rescue LoadError => e
-      p 'Cannot load rexml security patch'
+      #p 'Cannot load rexml security patch'
     end
     XmlSimple
   end
